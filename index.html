@@ -1,116 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Oksana Prokopieva</title>
   </head>
   <body>
     <header>
-      <h3>Oksana Prokopieva</h3>
-      <nav>
-        <ul>
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#work"></a>Work</li>
-          <li><a href="#contact"></a>Contact</li>
-          <li><a href="#"></a>Resume</li>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#about-me" class="nav-link">About me</a>
+          </li>
+          <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <div class="top-img">
-      <p>Full Stack Developer</p>
-    </div>
-    <main class="content">
-      <aside>
-        <h2>About Me</h2>
-        <div class="vertical-line"></div>
-      </aside>
-      <section id="about-me-content">
-        <p>
-          I started my Developer career in 2022💻. Being Master Accountant💰
-          before with absolute passion to learning so no wonder that after
-          mastering in finance switched to coding once. I am enjoying the
-          industry with endless knowledge, feel unstoppable interest to learning
-          something new each day.
+    <main>
+      <!--About me-->
+      <section class="about-me" id="about-me">
+        <h2 class="section-title section-title-about">
+          Hi, I am <br />
+          Oksana Prokopieva
+        </h2>
+        <p class="section-subtitle section-subtitle-about">
+          Full Stack Developer
         </p>
-        <p>
-          I believe that it is a very important to balance work and rest in our
-          life so I'm living yoga lifestyle 🧘‍♀️ and in my free time enjoying
-          exploring the Nature🌼 and if you can't find me, you definitely will
-          find me there🤍.
-        </p>
+        <div class="about-me-body">
+          <p>
+            Started my Developer💻 career in 2022. Being Master of Accounting💰
+            before with absolute passion to learning, so no wonder that after
+            mastering in finance switched to coding once. Enjoying the industry
+            with endless knowledge, feel unstoppable interest to learning
+            something new each day.
+          </p>
+          <p>
+            Believe that it is a very important to keep work and rest in a
+            balance, that is why I'm living yoga lifestyle🧘‍♀️ and in a free time
+            enjoying exploring the Nature🌼, so if you can't find me, you
+            definitely will find me there🤍.
+          </p>
+        </div>
+        <img
+          src="./assets/images/oksanaProkopieva.jpg"
+          alt="a pic of Oksana Prokopieva"
+          class="about-me-img"
+        />
       </section>
-      <aside>
-        <h2>Work</h2>
-        <div class="vertical-line"></div>
-      </aside>
-      <section id="work-content">
-        <div class="container">
-          <div class="first-project-img">
-            <div class="project-description">
-              <p class="project-description-header">Name</p>
-              <p class="project-description-technologies">MERN Stack</p>
-            </div>
+      <!--Work-->
+      <section class="my-work" id="work">
+        <h2 class="section-title section-title-work">Projects</h2>
+        <p class="section-subtitle section-subtitle-work">
+          Selection of my work
+        </p>
+        <div class="portfolio">
+          <!--Crown clothing-->
+          <div class="portfolio-item">
+            <p class="description">
+              Crown clothing<br />TS/React/Redux/GraphQL/Firebase
+            </p>
+            <a
+              href="https://crown-clothing-usa.netlify.app"
+              class="portfolio-item"
+            >
+              <img
+                src="./assets/images/crownApp.png"
+                alt="crown project"
+                class="portfolio-img"
+              />
+            </a>
           </div>
-          <div class="flex-container">
-            <div class="flex-project-img">
-              <div class="project-description">
-                <p class="project-description-header">Crown clothing</p>
-                <p class="project-description-technologies">
-                  TS/React/Redux/GraphQL/Firebase
-                </p>
-              </div>
-            </div>
-            <div class="flex-project-img">
-              <div class="project-description">
-                <p class="project-description-header">To-do App</p>
-                <p class="project-description-technologies">
-                  TS/React/Redux/MUI
-                </p>
-              </div>
-            </div>
-            <div class="flex-project-img">
-              <div class="project-description">
-                <p class="project-description-header">Weather App</p>
-                <p class="project-description-technologies">
-                  HTML/CSS/JS/React
-                </p>
-              </div>
-            </div>
-            <div class="flex-project-img">
-              <div class="project-description">
-                <p class="project-description-header">Dictionary App</p>
-                <p class="project-description-technologies">HTML/CSS/JS</p>
-              </div>
-            </div>
+          <!--To-do App-->
+          <div class="portfolio-item">
+            <p>To-do App<br />TS/React/Redux/MUI</p>
+            <a
+              href="https://oprokopieva382.github.io/todolistApp"
+              class="portfolio-item"
+            >
+              <img
+                src="./assets/images/todoApp.jpg"
+                alt="To-do App project"
+                class="portfolio-img"
+              />
+            </a>
+          </div>
+          <!--Weather App-->
+          <div class="portfolio-item">
+            <p>Weather App<br />HTML/CSS/JS/React</p>
+            <a
+              href="https://my-weather-app-info.netlify.app"
+              class="portfolio-item"
+            >
+              <img
+                src="./assets/images/weatherApp.jpg"
+                alt="Weather App project"
+                class="portfolio-img"
+              />
+            </a>
           </div>
         </div>
       </section>
-      <aside>
-        <h2>Contact</h2>
-        <div class="vertical-line"></div>
-      </aside>
-      <section id="contact-content">
-        <span>📞 850-238-0442 </span>
-        <span>
-          <a href="mailto:oprokopieva382@gmail.com"
-            >oprokopieva382@gmail.com</a
-          ></span
-        >
-        <span
-          ><a href="https://github.com/oprokopieva382" target="_blank"
-            >GitHub</a
-          ></span
-        >
-        <span
-          ><a
+    </main>
+    <!--Contact-->
+    <footer class="footer" id="contact">
+      <h2 class="section-title section-title-contact">Contact me</h2>
+      <p><i class="fa fa-mobile" aria-hidden="true"></i> 850-238-0442</p>
+      <a href="mailto:oprokopieva382@gmail.com" class="footer-link"
+        >oprokopieva382@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a
+            href="https://github.com/oprokopieva382"
+            target="_blank"
+            class="social-list-link"
+          >
+            <i class="fa fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li class="social-list-item">
+          <a
             href="https://www.linkedin.com/in/oksana-prokopieva/"
             target="_blank"
-            >linkedIn</a
-          ></span
-        >
-      </section>
-    </main>
+            class="social-list-link"
+            ><i class="fa fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
