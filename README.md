@@ -1,13 +1,13 @@
 # Portfolio Webpage
 
 ## Description
-Hi friend✌️. Here is portfolio with About Me, Work and Contact sections. Nice to meet you🌹.
+update here
 
 ## Links
 Check out the [Portfolio](https://oprokopieva382.github.io/portfolio-bootcamp/)
 
 ## Portfolio View
-![webpage-screenshot](./assets/images/screenshot.png)
+![webpage-screenshot](./assets/images/updatehere)
 
 
 ## Installation
