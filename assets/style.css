@@ -71,6 +71,7 @@ a {
 main {
   display: flex;
   flex-wrap: wrap;
+  width: 95%;
 }
 section {
   display: flex;
@@ -81,19 +82,35 @@ aside {
   padding-right: 20px;
   margin: 40px;
   font-size: 50px;
-   font-weight: bold;
+  font-weight: bold;
   border-right: 4px solid rgb(43, 43, 110);
 }
 article {
-  flex: 3;
-}
-.about-me {
-  width: 90%;
+  flex: 4;
+  }
+.article-content {
+  display: flex;
+  flex-wrap: wrap;
   margin: 40px 0;
 }
 .about-me-content {
   padding-bottom: 15px;
   line-height: 20px;
+}
+.article-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: space-between; 
+}
+.image {
+  flex: 1; /* Make each image take up an equal amount of space */
+  max-width: 100%; /* Calculate the width for two images per row with gap */
+  max-height: 250px; 
+}
+.first-image {
+  flex: 2; /* Make the first image take up two rows */
+  max-width: 100%;
 }
 /* footer */
 .footer {
