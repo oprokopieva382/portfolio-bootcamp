@@ -1,6 +1,9 @@
 h2 {
   font-size: 275%;
 }
+h3 {
+  font-size: 180%;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -24,3 +27,29 @@ text-decoration: none;
 font-size: 16px;
 border-bottom: 2px solid #92CCCE;
 }
+.background-img {
+  background-image: url(./images/background-img.png);
+  height: 25vh;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.slogan {
+  margin: 40px;
+  background-color: #92CCCE;
+  padding: 10px;
+  color: #31343D;
+  }
+  main {
+    padding: 30px 50px;
+  }
+  section {
+    display: flex;
+    
+  }
+  aside {
+    flex: 1;
+  }
+  article {
+    flex: 4;
+  }
