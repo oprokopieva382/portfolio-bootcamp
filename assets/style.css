@@ -1,3 +1,12 @@
+:root {
+  --dark: #31343d;
+  --light: #92ccce;
+  --text: #445877
+}
+body {
+  line-height: 1.5;
+  font-size: 16px;
+}
 h2 {
   font-size: 275%;
 }
@@ -7,49 +16,59 @@ h3 {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #31343D;
+  background-color: #31343d;
   align-items: center;
   height: 80px;
   padding-right: 50px;
 }
 .logo {
-  background-color: #92CCCE;
-  padding: 5px 10px 5px 50px;
+  background-color: #92ccce;
+  padding: 1px 10px 1px 50px;
 }
 nav {
   display: flex;
   gap: 30px;
 }
 .nav-item {
-padding-bottom: 5px;
-color: #92CCCE;
-text-decoration: none;
-font-size: 16px;
-border-bottom: 2px solid #92CCCE;
+  padding-bottom: 5px;
+  color: #92ccce;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 2px solid #92ccce;
 }
 .background-img {
   background-image: url(./images/background-img.png);
-  height: 25vh;
+  height: 20vh;
   display: flex;
   justify-content: end;
   align-items: end;
 }
 .slogan {
   margin: 40px;
-  background-color: #92CCCE;
+  background-color: #92ccce;
   padding: 10px;
-  color: #31343D;
-  }
-  main {
-    padding: 30px 50px;
-  }
-  section {
-    display: flex;
-    
-  }
-  aside {
-    flex: 1;
-  }
-  article {
-    flex: 4;
-  }
+  color: #31343d;
+}
+main {
+  padding: 30px 50px;
+}
+section {
+  display: flex;
+  margin-bottom: 5%;
+}
+aside {
+  flex: 1;
+  text-align: right;
+  padding-right: 2%;
+}
+article {
+  flex: 4;
+}
+aside > h2 {
+  padding-right: 4%;
+  border-right: 2px solid var(--text);
+  color: var(--text);
+}
+.about-me-content {
+  margin-bottom: 1%;
+}
