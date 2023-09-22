@@ -1,7 +1,7 @@
 :root {
   --dark: #31343d;
   --light: #92ccce;
-  --text: #445877
+  --text: #445877;
 }
 body {
   line-height: 1.5;
@@ -55,6 +55,7 @@ main {
 section {
   display: flex;
   margin-bottom: 5%;
+  align-items: center;
 }
 aside {
   flex: 1;
@@ -63,10 +64,18 @@ aside {
 }
 article {
   flex: 4;
+  display: flex;
+  justify-content: space-between;
+}
+article > a {
+  padding: 0 2% 0.5%;
+  border-bottom: 3px solid var(--text);
+  text-decoration: none;
+  color: var(--text);
 }
 aside > h2 {
   padding-right: 4%;
-  border-right: 2px solid var(--text);
+  border-right: 3px solid var(--text);
   color: var(--text);
 }
 .about-me-content {
