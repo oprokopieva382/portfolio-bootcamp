@@ -44,7 +44,7 @@ nav {
 /* Background img */
 .background-img {
   background-image: url(./images/background-img.png);
-  height: 20vh;
+  height: 30vh;
   display: flex;
   justify-content: end;
   align-items: end;
@@ -68,7 +68,7 @@ section {
 aside {
   flex: 1;
   text-align: right;
-   padding-right: 2%;
+  padding-right: 2%;
   border-right: 3px solid var(--text);
 }
 article {
@@ -161,7 +161,7 @@ a {
   background-size: 100% 200%;
   background-position: 0 100%;
   color: var(--light);
-  transition: background-position 0.6s ease-in-out, color 0.3s ease-in-out;
+  transition: background-position 0.4s ease-in-out, color 0.3s ease-in-out;
 }
 a:hover {
   background-position: 0 0;
@@ -205,10 +205,32 @@ a:hover {
 }
 @media (max-width: 1078px) {
   .next-project,
-.node-project,
-.react-project,
-.mern-project,
-.css-html-project {
-  flex: 0 0 48.8%;
+  .node-project,
+  .react-project,
+  .mern-project,
+  .css-html-project {
+    flex: 0 0 48.8%;
+  }
 }
+@media (max-width: 768px) {
+  .main-project {
+    min-height: 150px;
+  }
+  h2 {
+    font-size: 220%;
+  }
+  h3 {
+    font-size: 150%;
+  }
+  header {
+    height: 75px;
+  }
+  .contact-me {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-me a {
+    padding: 2%;
+    margin: 0.5%;
+  }
 }
