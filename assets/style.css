@@ -14,6 +14,8 @@ h2 {
 h3 {
   font-size: 180%;
 }
+
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -38,6 +40,8 @@ nav {
   font-size: 16px;
   border-bottom: 2px solid var(--light);
 }
+
+/* Background img */
 .background-img {
   background-image: url(./images/background-img.png);
   height: 20vh;
@@ -51,6 +55,8 @@ nav {
   padding: 10px;
   color: var(--dark);
 }
+
+/* Main */
 main {
   padding: 30px 50px;
 }
@@ -62,7 +68,7 @@ section {
 aside {
   flex: 1;
   text-align: right;
-  padding-right: 2%;
+   padding-right: 2%;
   border-right: 3px solid var(--text);
 }
 article {
@@ -148,7 +154,7 @@ aside > h2 {
 }
 .technologies {
   color: var(--dark);
-   font-size: 12px;
+  font-size: 12px;
 }
 a {
   background-image: linear-gradient(to top, transparent 50%, var(--light) 50%);
@@ -160,4 +166,49 @@ a {
 a:hover {
   background-position: 0 0;
   color: var(--dark);
+}
+@media (max-width: 980px) {
+  header {
+    flex-direction: column;
+    height: 85px;
+    padding-right: 0;
+  }
+  h2 {
+    font-size: 300%;
+  }
+  .logo {
+    width: 100vw;
+    padding: 1px 0;
+    text-align: center;
+  }
+  nav {
+    padding-bottom: 1%;
+  }
+  section {
+    flex-direction: column;
+  }
+  aside {
+    border-right: 0;
+    border-bottom: 3px solid var(--text);
+    text-align: start;
+  }
+  article {
+    padding-left: 0%;
+    margin-top: 2%;
+  }
+  .node-project,
+  .react-project,
+  .mern-project,
+  .css-html-project {
+    min-width: 100%;
+  }
+}
+@media (max-width: 1078px) {
+  .next-project,
+.node-project,
+.react-project,
+.mern-project,
+.css-html-project {
+  flex: 0 0 48.8%;
+}
 }
