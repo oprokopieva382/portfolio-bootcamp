@@ -5,6 +5,8 @@
 }
 body {
   font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 h2 {
   font-size: 275%;
@@ -15,14 +17,15 @@ h3 {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #31343d;
+  background-color: var(--dark);
   align-items: center;
   height: 80px;
   padding-right: 50px;
 }
 .logo {
-  background-color: #92ccce;
+  background-color: var(--light);
   padding: 1px 10px 1px 50px;
+  color: var(--dark);
 }
 nav {
   display: flex;
@@ -30,10 +33,10 @@ nav {
 }
 .nav-item {
   padding-bottom: 5px;
-  color: #92ccce;
+  color: var(--light);
   text-decoration: none;
   font-size: 16px;
-  border-bottom: 2px solid #92ccce;
+  border-bottom: 2px solid var(--light);
 }
 .background-img {
   background-image: url(./images/background-img.png);
@@ -44,9 +47,9 @@ nav {
 }
 .slogan {
   margin: 40px;
-  background-color: #92ccce;
+  background-color: var(--light);
   padding: 10px;
-  color: #31343d;
+  color: var(--dark);
 }
 main {
   padding: 30px 50px;
@@ -69,7 +72,6 @@ article {
   padding-left: 2%;
 }
 article > a {
-  border-bottom: 3px solid var(--text);
   text-decoration: none;
   color: var(--text);
 }
@@ -78,11 +80,20 @@ aside > h2 {
   color: var(--text);
 }
 .contact-me {
-  margin-top: 25px;
+  font-size: 18px;
+  color: var(--text);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-me a {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #92ccce;
 }
 .about-me-content {
   margin-bottom: 1%;
-   line-height: 1.4;
+  line-height: 1.4;
 }
 .work-content-title {
   display: flex;
@@ -90,7 +101,11 @@ aside > h2 {
   width: 100%;
   flex-wrap: wrap;
 }
-.next-project, .node-project, .react-project, .mern-project, .css-html-project {
+.next-project,
+.node-project,
+.react-project,
+.mern-project,
+.css-html-project {
   flex: 0 0 49%;
   min-height: 150px;
   border: 4px solid var(--light);
@@ -99,7 +114,7 @@ aside > h2 {
   position: relative;
 }
 .node-project {
- background-image: url(./images/LED-Wall.png);
+  background-image: url(./images/LED-Wall.png);
 }
 .react-project {
   background-image: url(./images/calculator.jpg);
@@ -119,28 +134,29 @@ aside > h2 {
   background-position: center;
   position: relative;
 }
-.description{
+.description {
   position: absolute;
   bottom: 25px;
   background-color: var(--light);
   padding: 5px;
-  }
-  .cheatsheet {
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--dark);
-  }
-  .technologies {
-    color: var(--dark);
-  }
-  a {
+}
+.cheatsheet {
+  font-size: 16px;
+  padding-bottom: 5%;
+  font-weight: bold;
+  color: var(--dark);
+}
+.technologies {
+  color: var(--dark);
+   font-size: 12px;
+}
+a {
   background-image: linear-gradient(to top, transparent 50%, var(--light) 50%);
   background-size: 100% 200%;
   background-position: 0 100%;
   color: var(--light);
   transition: background-position 0.6s ease-in-out, color 0.3s ease-in-out;
- }
-
+}
 a:hover {
   background-position: 0 0;
   color: var(--dark);
