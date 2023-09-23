@@ -217,6 +217,9 @@ a:hover {
   .css-html-project {
     flex: 0 0 48.8%;
   }
+   .break {
+  display: inline;
+}
 }
 @media (max-width: 768px) {
   .main-project {
