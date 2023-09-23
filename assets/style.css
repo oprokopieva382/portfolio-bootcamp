@@ -60,6 +60,9 @@ nav {
 main {
   padding: 30px 50px;
 }
+.break {
+  display: block;
+}
 section {
   display: flex;
   margin-bottom: 5%;
@@ -173,6 +176,9 @@ a:hover {
     height: 85px;
     padding-right: 0;
   }
+  .break {
+  display: inline;
+}
   h2 {
     font-size: 300%;
   }

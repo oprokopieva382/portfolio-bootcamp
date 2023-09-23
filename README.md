@@ -1,13 +1,13 @@
 # Portfolio Webpage
 
 ## Description
-update here
+Mock-Up portfolio for Module 2 "Advanced CSS Challenge: Professional Portfolio"
 
 ## Links
 Check out the [Portfolio](https://oprokopieva382.github.io/portfolio-bootcamp/)
 
 ## Portfolio View
-![webpage-screenshot](./assets/images/updatehere)
+![webpage-screenshot](./assets/images/screenshot.png)
 
 
 ## Installation
